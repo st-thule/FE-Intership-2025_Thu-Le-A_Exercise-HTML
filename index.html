@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="container">
-      <div class="header-left">
+      <div class="header-navigate">
         <h2 class="header-logo">
           <img
             class="header-logo-image"
@@ -14,32 +14,36 @@
             alt="One more friend Thousands more fun!"
           />
         </h2>
-        <nav class="header-nav">
-          <ul class="header-menu">
-            <li class="header-menu-list">
+        <nav>
+          <ul class="header-menu-list">
+            <li class="header-menu-item">
               <a class="header-menu-link" href="#">Home</a>
             </li>
-            <li class="header-menu-list">
+            <li class="header-menu-item">
               <a class="header-menu-link" href="#">Category</a>
             </li>
-            <li class="header-menu-list">
+            <li class="header-menu-item">
               <a class="header-menu-link" href="#">About</a>
             </li>
-            <li class="header-menu-list">
+            <li class="header-menu-item">
               <a class="header-menu-link" href="#">Contact</a>
             </li>
           </ul>
         </nav>
       </div>
-      <div class="header-right">
-        <input
-          class="header-right-search"
-          type="search"
-          placeholder="Search something here!"
-        />
-        <button class="header-utitlity-btn">Join the community</button>
+      <div class="header-utility">
+        <form>
+          <input
+            class="header-utility-search"
+            type="search"
+            placeholder="Search something here!"
+          />
+        </form>
+        <button class="btn-primary header-utitlity-btn">
+          Join the community
+        </button>
         <select class="header-utility-currency">
-          <option value="VND" selected>VND</option> 
+          <option value="VND" selected>VND</option>
         </select>
       </div>
     </header>
