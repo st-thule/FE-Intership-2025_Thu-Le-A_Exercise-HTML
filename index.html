@@ -9,11 +9,13 @@
       <div class="container">
         <div class="header-navigation">
           <h2 class="logo">
-            <img
-              class="logo-image"
-              src="public/logo.png"
-              alt="One more friend Thousands more fun!"
-            />
+            <a href="#">
+              <img
+                class="logo-image"
+                src="public/logo.png"
+                alt="One more friend Thousands more fun!"
+              />
+            </a>
           </h2>
           <nav class="navbar">
             <ul class="list-menu">
@@ -33,7 +35,7 @@
           </nav>
         </div>
         <div class="header-utility">
-          <form>
+          <form class="form-search">
             <input
               class="utility-search"
               type="search"
@@ -41,9 +43,11 @@
             />
           </form>
           <button class="btn-primary btn-bold">Join the community</button>
-          <select class="utility-currency">
-            <option value="VND" selected>VND</option>
-          </select>
+          <div class="utitlity-currency">
+            <select class="currency-dropdown">
+              <option value="currency-option" selected>VND</option>
+            </select>  
+          </div>
         </div>
       </div>
     </header>
@@ -52,11 +56,11 @@
         <div class="container">
           <div class="hero-content">
             <div class="content-text">
-              <h1 class="section-title title-primary">
+              <h1 class="hero-title title-primary">
                 One More Friend
                 <span>Thousands more fun!</span>
               </h1>
-              <p class="section-desc">
+              <p class="hero-desc">
                 Having a pet means you have more joy, a new friend, a happy
                 person who will always be with you to have fun. We have 200+
                 different pets that can meet your needs!
