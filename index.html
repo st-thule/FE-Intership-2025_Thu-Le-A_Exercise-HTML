@@ -5,9 +5,81 @@
     <title>Homepage</title>
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <div class="container">
+        <div class="header-navigation">
+          <h2 class="logo">
+            <a href="#">
+              <img
+                class="logo-image"
+                src="public/logo.png"
+                alt="One more friend Thousands more fun!"
+              />
+            </a>
+          </h2>
+          <nav class="navbar">
+            <ul class="list-menu">
+              <li class="list-item">
+                <a class="item-link" href="#">Home</a>
+              </li>
+              <li class="menu-item">
+                <a class="item-link" href="#">Category</a>
+              </li>
+              <li class="menu-item">
+                <a class="item-link" href="#">About</a>
+              </li>
+              <li class="menu-item">
+                <a class="item-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-utility">
+          <form class="form-search">
+            <input
+              class="utility-search"
+              type="search"
+              placeholder="Search something here!"
+            />
+          </form>
+          <button class="btn btn-primary btn-bold">Join the community</button>
+          <div class="utitlity-currency">
+            <img class="currency-flag" src="public/flag.png" />
+            <select class="currency-dropdown">
+              <option value="currency-option" selected>VND</option>
+            </select>  
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
-      <section class="section section-hero"></section>
+      <section class="section section-banner section-hero">
+        <div class="container">
+          <div class="section-content">
+            <div class="section-text">
+              <h1 class="section-title title-primary">
+                One More Friend
+                <span>Thousands more fun!</span>
+              </h1>
+              <p class="section-desc">
+                Having a pet means you have more joy, a new friend, a happy
+                person who will always be with you to have fun. We have 200+
+                different pets that can meet your needs!
+              </p>
+            </div>
+            <div class="section-action">
+              <button class="btn btn-secondary">View Intro</button>
+              <button class="btn btn-primary">Explore Now</button>
+            </div>
+          </div>
+          <div class="section-image">
+            <img
+              src="/public/hero.png"
+              alt="Good humored woman holds dog laughing"
+            />
+          </div>
+        </div>
+      </section>
       <section class="section section-pets"></section>
       <section class="section section-friend"></section>
       <section class="section section-products"></section>
