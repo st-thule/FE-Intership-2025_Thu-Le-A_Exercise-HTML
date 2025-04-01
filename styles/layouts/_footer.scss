@@ -1,0 +1,60 @@
+@use "../abstracts/" as *;
+.footer {
+  background-color: $background-color;
+  padding: 80px 0 40px 0;
+  .container {
+    @include flex($direction: column, $align: center);
+  }
+  &-register {
+    @include flex(
+      $direction: row,
+      $wrap: wrap,
+      $align: center,
+      $justify: space-between
+    );
+    width: 100%;
+    padding: 32px 32px;
+    background-color: $secondary-color;
+    border-radius: 16px;
+  }
+  &-link {
+    width: 100%;
+    @include flex($direction: row, $align: center, $justify: space-between);
+    padding: 40px 0;
+  }
+}
+
+.register {
+  &-title {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    color: $white-register;
+    max-width: 389px;
+  }
+  &-form {
+    max-width: 707px;
+    width: 100%;
+    padding: 12px 12px;
+    border-radius: 14px;
+    background-color: $white;
+    @include flex(
+      $direction: row,
+      $wrap: wrap,
+      $align: center,
+      $justify: space-between,
+      
+    );
+    input {
+      border-radius: 8px;
+      border: 1px solid $input-color;
+      padding: 14px 28px;
+      max-width: 508px;
+      width: 100%;
+    }
+    button {
+      padding: 14px 30px;
+      margin-left: 12px;
+    }
+  }
+}
