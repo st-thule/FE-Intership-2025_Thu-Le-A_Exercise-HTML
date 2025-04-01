@@ -2,7 +2,9 @@
 
 .card {
   max-width: 280px;
-
+  &-image {
+    border-radius: 10px;
+  }
   &-content {
     @include flex($direction: column);
     max-width: 264px;

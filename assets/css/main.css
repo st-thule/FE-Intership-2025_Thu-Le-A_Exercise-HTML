@@ -1,3 +1,99 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "SVN-Gilroy", sans-serif;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img,
+sub,
+sup,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+label,
+table,
+caption,
+article,
+figure,
+figcaption,
+footer,
+header,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("../../assets/fonts/fonnts.com-SVNGilroy-Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("../../assets/fonts/fonnts.com-SVNGilroy-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
 .header .container {
   display: flex;
   flex-direction: row;
@@ -7,6 +103,9 @@
 
 .card {
   max-width: 280px;
+}
+.card-image {
+  border-radius: 10px;
 }
 .card-content {
   display: flex;
@@ -100,6 +199,19 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
+}
+
+.list-products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.list-item {
+  box-shadow: 0px 4px 28px -2px rgba(0, 0, 0, 0.08);
+  padding: 8px 8px 20px 8px;
+  border-radius: 12px;
 }
 
 /*# sourceMappingURL=main.css.map */
