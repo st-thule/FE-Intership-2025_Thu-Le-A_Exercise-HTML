@@ -1,0 +1,10 @@
+@use "../abstracts/" as *;
+
+.header .container {
+    @include flex($direction: row, $justify: space-between, $align: center);
+}
+.header {
+    &-navigation {
+
+    }
+}

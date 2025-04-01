@@ -1,0 +1,36 @@
+@use "../abstracts/" as *;
+
+.card {
+  max-width: 280px;
+
+  &-content {
+    @include flex($direction: column);
+    max-width: 264px;
+    padding-top: 8px;
+  }
+  &-title {
+    font-weight: 700;
+    color: $card-primary-color;
+    line-height: 24px;
+    font-size: 16px;
+  }
+  &-detail {
+    color: $grey-color;
+    line-height: 12px;
+    padding: 4px 0;
+    font-size: 12px;
+  }
+  &-price {
+    font-weight: 700;
+    color: $card-primary-color;
+    line-height: 14px;
+    font-size: 14px;
+  }
+}
+
+.detail {
+  &-value {
+    font-weight: 700;
+    padding-left: 6px;
+  }
+}
