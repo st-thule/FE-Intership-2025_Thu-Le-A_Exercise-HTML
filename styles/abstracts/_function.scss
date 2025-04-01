@@ -1,3 +1,8 @@
-@forward "./function";
-@forward "./mixin";
-@forward "./variables";
+@function widthCard($percent, $gap: 20px) {
+  @return calc(#{$percent} - #{$gap});
+}
+
+//px-to-rem
+@function pxToRem($px, $rem: 16) {
+  @return math.div($px, $rem) * 1rem;
+}
