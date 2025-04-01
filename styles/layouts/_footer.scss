@@ -1,0 +1,15 @@
+@use "../abstracts/" as *;
+
+.footer {
+    background-color: $background-color;
+    
+    &-register {
+        @include flex ($direction: row)
+    }
+}
+
+.footer .container  {
+    @include flex($direction: column, $justify: center, $align: center);
+}
+
+
