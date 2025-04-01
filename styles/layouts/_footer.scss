@@ -19,8 +19,31 @@
   }
   &-link {
     width: 100%;
-    @include flex($direction: row, $align: center, $justify: space-between);
+    @include flex(
+      $direction: row,
+      $wrap: wrap,
+      $align: center,
+      $justify: space-between
+    );
     padding: 40px 0;
+  }
+  &-info {
+    width: 100%;
+    @include flex($wrap: wrap, $justify: space-between);
+  }
+  &-legal {
+    width: 100%;
+    max-width: 225px;
+    .list {
+      &-legal {
+        @include flex($justify: space-between);
+      }
+      &-item {
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0 0;
+      }
+    }
   }
 }
 
@@ -42,8 +65,7 @@
       $direction: row,
       $wrap: wrap,
       $align: center,
-      $justify: space-between,
-      
+      $justify: space-between
     );
     input {
       border-radius: 8px;
@@ -55,6 +77,25 @@
     button {
       padding: 14px 30px;
       margin-left: 12px;
+    }
+  }
+}
+
+.list {
+  &-nav {
+    @include flex($gap: 60px);
+    color: $card-primary-color;
+  }
+}
+.footer-social {
+  .list {
+    &-social {
+      @include flex($direction: row, $align: center, $gap: 40px);
+    }
+    &-item {
+      box-shadow: none;
+      border-radius: 0;
+      padding: 0 0;
     }
   }
 }
