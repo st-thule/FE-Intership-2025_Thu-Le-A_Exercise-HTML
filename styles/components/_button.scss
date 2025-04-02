@@ -1,32 +1,37 @@
 @use "../base/" as *;
 
 .btn {
+  padding: 14px 28px;
   border-radius: 57px;
   border: 1.5px solid $primary-color;
   font-weight: $font-medium;
   font-size: $size-medium;
+  line-height: 24px;
   cursor: pointer;
   &-secondary {
     @include flex($direction: row, $align: center, $justify: space-between);
-    padding: 12px 28px;
     color: $primary-color;
     font-size: $size-small;
-    line-height: 24px;
     img {
-      padding-left: 21px;
+      padding-left: 20px;
     }
   }
   &-primary {
     background-color: $primary-color;
     color: $white-color;
-    padding: 14px 35px;
-    
-    line-height: 24px;
   }
   &-border {
     border-radius: 8px;
   }
-
+  &-2xl {
+    padding: 14px 35px;
+  }
+  &-xl {
+    padding: 14px 30px;
+  }
+  &-sm {
+    padding: 12px 28px;
+  }
   &-bold {
     @extend .btn;
     font-weight: $font-bold;
