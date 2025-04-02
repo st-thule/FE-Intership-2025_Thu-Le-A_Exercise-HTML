@@ -1,18 +1,24 @@
 @use "functions" as *;
 
-//Font Family
-$primary-font: 'SVN-Gilroy', sans-serif;
 
 // Colors
-$primary-color: #002A48;
-$secondary-color: #003459;
-$background-color: #FCEED5;
-$description-color: #242B33;
-$white: #ffffff;
-$card-primary-color: #00171F;
-$grey-color: #667479;
+$primary-color: #003459;
+$secondary-color: #002A48;
+$light-orange-color: #FCEED5;
+$dark-grey-color: #242B33;
+$white-color: #ffffff;
+$light-black-color: #00171F;
+$grey-a-color: #667479;
 $black-color: #000000;
-$tag-color: #00A7E7;
+$light-blue-color: #00A7E7;
 
+//font size
+$size-xs: 10px;
+$size-tiny: 12px;
+$size-small: 14px;
+$size-medium: 16px;
+$size-large: 24px;
+$size-xl: 36px;
+$size-2xl: 46px;
 
 // Breakpoints
