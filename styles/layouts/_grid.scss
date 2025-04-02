@@ -1,0 +1,40 @@
+@use "../base/" as *;
+
+//Container
+.container {
+  max-width: 1212px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 16px;
+}
+
+// Row, Col
+$columns: 12;
+$gap: 20px;
+
+.row {
+  @include flex($wrap: wrap, $gap: $gap);
+}
+
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    width: calc(100% - (12 / $i - 1) * $gap) / calc(12 / $i);
+  }
+}
+
+// Breakpoints
+@media screen and (min-width: 576px) {
+  @for $i from 1 through $columns {
+    .col-sm-#{$i} {
+      width: calc(100% - (12 / $i - 1) * $gap) / calc(12 / $i);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  @for $i from 1 through $columns {
+    .col-md-#{$i} {
+      width: calc(100% - (12 / $i - 1) * $gap) / calc(12 / $i);
+    }
+  }
+}
