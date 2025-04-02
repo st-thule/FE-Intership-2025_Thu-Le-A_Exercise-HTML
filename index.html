@@ -2,52 +2,59 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="height=device-height,width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
+    />
     <title>Homepage</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-navigation">
-          <h2 class="logo">
-            <a href="#">
-              <img
-                class="logo-image"
-                src="assets/images/logo.png"
-                alt="One more friend Thousands more fun!"
+        <div class="wrapper">
+          <div class="header-navigation">
+            <h2 class="logo">
+              <a href="#">
+                <img
+                  class="logo-image"
+                  src="assets/images/logo.png"
+                  alt="One more friend Thousands more fun!"
+                />
+              </a>
+            </h2>
+            <nav class="navbar">
+              <ul class="list-menu">
+                <li class="list-item">
+                  <a class="item-link" href="#">Home</a>
+                </li>
+                <li class="menu-item">
+                  <a class="item-link" href="#">Category</a>
+                </li>
+                <li class="menu-item">
+                  <a class="item-link" href="#">About</a>
+                </li>
+                <li class="menu-item">
+                  <a class="item-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-utility">
+            <form class="form-search">
+              <input
+                class="utility-search"
+                type="search"
+                placeholder="Search something here!"
               />
-            </a>
-          </h2>
-          <nav class="navbar">
-            <ul class="list-menu">
-              <li class="list-item">
-                <a class="item-link" href="#">Home</a>
-              </li>
-              <li class="menu-item">
-                <a class="item-link" href="#">Category</a>
-              </li>
-              <li class="menu-item">
-                <a class="item-link" href="#">About</a>
-              </li>
-              <li class="menu-item">
-                <a class="item-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="header-utility">
-          <form class="form-search">
-            <input
-              class="utility-search"
-              type="search"
-              placeholder="Search something here!"
-            />
-          </form>
-          <button class="btn btn-primary btn-bold">Join the community</button>
-          <div class="utitlity-currency">
-            <img class="currency-flag" src="assets/images/flag.png" />
-            <select class="currency-dropdown">
-              <option value="currency-option" selected>VND</option>
-            </select>
+            </form>
+            <button class="btn btn-primary btn-bold">Join the community</button>
+            <div class="utitlity-currency">
+              <img class="currency-flag" src="assets/images/flag.png" />
+              <select class="currency-dropdown">
+                <option value="currency-option" selected>VND</option>
+              </select>
+            </div>
           </div>
         </div>
       </div>
@@ -55,692 +62,725 @@
     <main>
       <section class="section section-banner section-hero">
         <div class="container">
-          <div class="section-content">
-            <div class="section-text">
-              <h1 class="section-title">
-                One More Friend
-                <span>Thousands more fun!</span>
-              </h1>
-              <p class="section-desc">
-                Having a pet means you have more joy, a new friend, a happy
-                person who will always be with you to have fun. We have 200+
-                different pets that can meet your needs!
-              </p>
+          <div class="wrapper">
+            <div class="section-content">
+              <div class="section-text">
+                <h1 class="section-title">
+                  One More Friend
+                  <span>Thousands more fun!</span>
+                </h1>
+                <p class="section-desc">
+                  Having a pet means you have more joy, a new friend, a happy
+                  person who will always be with you to have fun. We have 200+
+                  different pets that can meet your needs!
+                </p>
+              </div>
+              <div class="section-action">
+                <button class="btn btn-secondary">View Intro</button>
+                <button class="btn btn-primary">Explore Now</button>
+              </div>
             </div>
-            <div class="section-action">
-              <button class="btn btn-secondary">View Intro</button>
-              <button class="btn btn-primary">Explore Now</button>
+            <div class="section-image">
+              <img
+                src="assets/images/hero.png"
+                alt="Good humored woman holds dog laughing"
+              />
             </div>
-          </div>
-          <div class="section-image">
-            <img
-              src="assets/images/hero.png"
-              alt="Good humored woman holds dog laughing"
-            />
           </div>
         </div>
       </section>
       <section class="section section-products section-pets">
         <div class="container">
-          <div class="section-header">
-            <div class="section-text">
-              <p class="section-subtitle">Whats new?</p>
-              <h2 class="section-title">Take A Look At Some Of Our Pets</h2>
+          <div class="wrapper">
+            <div class="section-header">
+              <div class="section-text">
+                <p class="section-subtitle">Whats new?</p>
+                <h2 class="section-title">Take A Look At Some Of Our Pets</h2>
+              </div>
+              <div class="section-action">
+                <button class="btn btn-secondary">View more</button>
+              </div>
             </div>
-            <div class="section-action">
-              <button class="btn btn-secondary">View more</button>
+            <div class="section-body">
+              <ul class="list-products row">
+                <li class="list-item col-3 col-md-6 col-sm-6">
+                  <a class="card" href="#">
+                    <div class="card-img">
+                      <img src="assets/images/pets.png" alt="Pomeranian" />
+                    </div>
+                    <div class="card-content">
+                      <h3 class="card-title">MO231 - Pomeranian White</h3>
+                      <p class="card-detail detail">
+                        <span class="detail-label">Gene:</span>
+                        <span class="detail-value">Male</span>
+                        <span class="detail-dot">.</span>
+                        <span class="detail-label">Age:</span>
+                        <span class="detail-value">02 months</span>
+                      </p>
+                      <span class="card-price">6.900.000 VND</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="list-item col-3 col-md-6 col-sm-6">
+                  <a class="card" href="#">
+                    <div class="card-img">
+                      <img src="assets/images/pets.png" alt="Pomeranian" />
+                    </div>
+                    <div class="card-content">
+                      <h3 class="card-title">MO231 - Pomeranian White</h3>
+                      <p class="card-detail detail">
+                        <span class="detail-label">Gene:</span>
+                        <span class="detail-value">Male</span>
+                        <span class="detail-dot">.</span>
+                        <span class="detail-label">Age:</span>
+                        <span class="detail-value">02 months</span>
+                      </p>
+                      <span class="card-price">6.900.000 VND</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="list-item col-3 col-md-6 col-sm-6">
+                  <a class="card" href="#">
+                    <div class="card-img">
+                      <img src="assets/images/pets.png" alt="Pomeranian" />
+                    </div>
+                    <div class="card-content">
+                      <h3 class="card-title">MO231 - Pomeranian White</h3>
+                      <p class="card-detail detail">
+                        <span class="detail-label">Gene:</span>
+                        <span class="detail-value">Male</span>
+                        <span class="detail-dot">.</span>
+                        <span class="detail-label">Age:</span>
+                        <span class="detail-value">02 months</span>
+                      </p>
+                      <span class="card-price">6.900.000 VND</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="list-item col-3 col-md-6 col-sm-6">
+                  <a class="card" href="#">
+                    <div class="card-img">
+                      <img src="assets/images/pets.png" alt="Pomeranian" />
+                    </div>
+                    <div class="card-content">
+                      <h3 class="card-title">MO231 - Pomeranian White</h3>
+                      <p class="card-detail detail">
+                        <span class="detail-label">Gene:</span>
+                        <span class="detail-value">Male</span>
+                        <span class="detail-dot">.</span>
+                        <span class="detail-label">Age:</span>
+                        <span class="detail-value">02 months</span>
+                      </p>
+                      <span class="card-price">6.900.000 VND</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="list-item col-3 col-md-6 col-sm-6">
+                  <a class="card" href="#">
+                    <div class="card-img">
+                      <img src="assets/images/pets.png" alt="Pomeranian" />
+                    </div>
+                    <div class="card-content">
+                      <h3 class="card-title">MO231 - Pomeranian White</h3>
+                      <p class="card-detail detail">
+                        <span class="detail-label">Gene:</span>
+                        <span class="detail-value">Male</span>
+                        <span class="detail-dot">.</span>
+                        <span class="detail-label">Age:</span>
+                        <span class="detail-value">02 months</span>
+                      </p>
+                      <span class="card-price">6.900.000 VND</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="list-item col-3 col-md-6 col-sm-6">
+                  <a class="card" href="#">
+                    <div class="card-img">
+                      <img src="assets/images/pets.png" alt="Pomeranian" />
+                    </div>
+                    <div class="card-content">
+                      <h3 class="card-title">MO231 - Pomeranian White</h3>
+                      <p class="card-detail detail">
+                        <span class="detail-label">Gene:</span>
+                        <span class="detail-value">Male</span>
+                        <span class="detail-dot">.</span>
+                        <span class="detail-label">Age:</span>
+                        <span class="detail-value">02 months</span>
+                      </p>
+                      <span class="card-price">6.900.000 VND</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="list-item col-3 col-md-6 col-sm-6">
+                  <a class="card" href="#">
+                    <div class="card-img">
+                      <img src="assets/images/pets.png" alt="Pomeranian" />
+                    </div>
+                    <div class="card-content">
+                      <h3 class="card-title">MO231 - Pomeranian White</h3>
+                      <p class="card-detail detail">
+                        <span class="detail-label">Gene:</span>
+                        <span class="detail-value">Male</span>
+                        <span class="detail-dot">.</span>
+                        <span class="detail-label">Age:</span>
+                        <span class="detail-value">02 months</span>
+                      </p>
+                      <span class="card-price">6.900.000 VND</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="list-item col-3 col-md-6 col-sm-6">
+                  <a class="card" href="#">
+                    <div class="card-img">
+                      <img src="assets/images/pets.png" alt="Pomeranian" />
+                    </div>
+                    <div class="card-content">
+                      <h3 class="card-title">MO231 - Pomeranian White</h3>
+                      <p class="card-detail detail">
+                        <span class="detail-label">Gene:</span>
+                        <span class="detail-value">Male</span>
+                        <span class="detail-dot">.</span>
+                        <span class="detail-label">Age:</span>
+                        <span class="detail-value">02 months</span>
+                      </p>
+                      <span class="card-price">6.900.000 VND</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
             </div>
-          </div>
-          <div class="section-body">
-            <ul class="list-products">
-              <li class="list-item">
-                <a class="card" href="#">
-                  <div class="card-img">
-                    <img src="assets/images/pets.png" alt="Pomeranian" />
-                  </div>
-                  <div class="card-content">
-                    <h3 class="card-title">MO231 - Pomeranian White</h3>
-                    <p class="card-detail detail">
-                      <span class="detail-label">Gene:</span>
-                      <span class="detail-value">Male</span>
-                      <span class="detail-dot">.</span>
-                      <span class="detail-label">Age:</span>
-                      <span class="detail-value">02 months</span>
-                    </p>
-                    <span class="card-price">6.900.000 VND</span>
-                  </div>
-                </a>
-              </li>
-              <li class="list-item">
-                <a class="card" href="#">
-                  <div class="card-img">
-                    <img src="assets/images/pets.png" alt="Pomeranian" />
-                  </div>
-                  <div class="card-content">
-                    <h3 class="card-title">MO231 - Pomeranian White</h3>
-                    <p class="card-detail detail">
-                      <span class="detail-label">Gene:</span>
-                      <span class="detail-value">Male</span>
-                      <span class="detail-dot">.</span>
-                      <span class="detail-label">Age:</span>
-                      <span class="detail-value">02 months</span>
-                    </p>
-                    <span class="card-price">6.900.000 VND</span>
-                  </div>
-                </a>
-              </li>
-              <li class="list-item">
-                <a class="card" href="#">
-                  <div class="card-img">
-                    <img src="assets/images/pets.png" alt="Pomeranian" />
-                  </div>
-                  <div class="card-content">
-                    <h3 class="card-title">MO231 - Pomeranian White</h3>
-                    <p class="card-detail detail">
-                      <span class="detail-label">Gene:</span>
-                      <span class="detail-value">Male</span>
-                      <span class="detail-dot">.</span>
-                      <span class="detail-label">Age:</span>
-                      <span class="detail-value">02 months</span>
-                    </p>
-                    <span class="card-price">6.900.000 VND</span>
-                  </div>
-                </a>
-              </li>
-              <li class="list-item">
-                <a class="card" href="#">
-                  <div class="card-img">
-                    <img src="assets/images/pets.png" alt="Pomeranian" />
-                  </div>
-                  <div class="card-content">
-                    <h3 class="card-title">MO231 - Pomeranian White</h3>
-                    <p class="card-detail detail">
-                      <span class="detail-label">Gene:</span>
-                      <span class="detail-value">Male</span>
-                      <span class="detail-dot">.</span>
-                      <span class="detail-label">Age:</span>
-                      <span class="detail-value">02 months</span>
-                    </p>
-                    <span class="card-price">6.900.000 VND</span>
-                  </div>
-                </a>
-              </li>
-              <li class="list-item">
-                <a class="card" href="#">
-                  <div class="card-img">
-                    <img src="assets/images/pets.png" alt="Pomeranian" />
-                  </div>
-                  <div class="card-content">
-                    <h3 class="card-title">MO231 - Pomeranian White</h3>
-                    <p class="card-detail detail">
-                      <span class="detail-label">Gene:</span>
-                      <span class="detail-value">Male</span>
-                      <span class="detail-dot">.</span>
-                      <span class="detail-label">Age:</span>
-                      <span class="detail-value">02 months</span>
-                    </p>
-                    <span class="card-price">6.900.000 VND</span>
-                  </div>
-                </a>
-              </li>
-              <li class="list-item">
-                <a class="card" href="#">
-                  <div class="card-img">
-                    <img src="assets/images/pets.png" alt="Pomeranian" />
-                  </div>
-                  <div class="card-content">
-                    <h3 class="card-title">MO231 - Pomeranian White</h3>
-                    <p class="card-detail detail">
-                      <span class="detail-label">Gene:</span>
-                      <span class="detail-value">Male</span>
-                      <span class="detail-dot">.</span>
-                      <span class="detail-label">Age:</span>
-                      <span class="detail-value">02 months</span>
-                    </p>
-                    <span class="card-price">6.900.000 VND</span>
-                  </div>
-                </a>
-              </li>
-              <li class="list-item">
-                <a class="card" href="#">
-                  <div class="card-img">
-                    <img src="assets/images/pets.png" alt="Pomeranian" />
-                  </div>
-                  <div class="card-content">
-                    <h3 class="card-title">MO231 - Pomeranian White</h3>
-                    <p class="card-detail detail">
-                      <span class="detail-label">Gene:</span>
-                      <span class="detail-value">Male</span>
-                      <span class="detail-dot">.</span>
-                      <span class="detail-label">Age:</span>
-                      <span class="detail-value">02 months</span>
-                    </p>
-                    <span class="card-price">6.900.000 VND</span>
-                  </div>
-                </a>
-              </li>
-              <li class="list-item">
-                <a class="card" href="#">
-                  <div class="card-img">
-                    <img src="assets/images/pets.png" alt="Pomeranian" />
-                  </div>
-                  <div class="card-content">
-                    <h3 class="card-title">MO231 - Pomeranian White</h3>
-                    <p class="card-detail detail">
-                      <span class="detail-label">Gene:</span>
-                      <span class="detail-value">Male</span>
-                      <span class="detail-dot">.</span>
-                      <span class="detail-label">Age:</span>
-                      <span class="detail-value">02 months</span>
-                    </p>
-                    <span class="card-price">6.900.000 VND</span>
-                  </div>
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
       </section>
       <section class="section section-banner section-friend">
         <div class="container">
-          <div class="section-image">
-            <img
-              src="assets/images/friend-banner.png"
-              alt="A girl jeans kissing cute puppy"
-            />
-          </div>
-          <div class="section-content">
-            <div class="section-text">
-              <h2 class="section-title">
-                One More Friend<span>Thousands More Fun!</span>
-              </h2>
-              <p class="section-desc">
-                Having a pet means you have more joy, a new friend, a happy
-                person who will always be with you to have fun. We have 200+
-                different pets that can meet your needs!
-              </p>
+          <div class="wrapper">
+            <div class="section-image">
+              <img
+                src="assets/images/friend-banner.png"
+                alt="A girl jeans kissing cute puppy"
+              />
             </div>
-            <div class="section-action">
-              <button class="btn btn-secondary">View Intro</button>
-              <button class="btn btn-primary">Explore Now</button>
+            <div class="section-content">
+              <div class="section-text">
+                <h2 class="section-title">
+                  One More Friend<span>Thousands More Fun!</span>
+                </h2>
+                <p class="section-desc">
+                  Having a pet means you have more joy, a new friend, a happy
+                  person who will always be with you to have fun. We have 200+
+                  different pets that can meet your needs!
+                </p>
+              </div>
+              <div class="section-action">
+                <button class="btn btn-secondary">View Intro</button>
+                <button class="btn btn-primary">Explore Now</button>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section class="section section-products">
         <div class="container">
-          <div class="section-header">
-            <div class="section-text">
-              <p class="section-subtitle">
-                Hard to choose right products for your pets?
-              </p>
-              <h2 class="section-title">Our Products</h2>
+          <div class="wrapper">
+            <div class="section-header">
+              <div class="section-text">
+                <p class="section-subtitle">
+                  Hard to choose right products for your pets?
+                </p>
+                <h2 class="section-title">Our Products</h2>
+              </div>
+              <div class="section-action">
+                <button class="btn btn-secondary">View More</button>
+              </div>
             </div>
-            <div class="section-action">
-              <button class="btn btn-secondary">View More</button>
+            <div class="section-body">
+              <ul class="list-products row">
+                <li class="list-item list-item col-3 col-md-6 col-sm-6">
+                  <a class="card" href="#">
+                    <div class="card-img">
+                      <img
+                        src="assets/images/product.png"
+                        alt="Reflex Plus Adult Cat Food Salmon"
+                      />
+                    </div>
+                    <div class="card-content">
+                      <h3 class="card-title">
+                        Reflex Plus Adult Cat Food Salmon
+                      </h3>
+                      <p class="card-detail detail">
+                        <span class="detail-label">Product:</span>
+                        <span class="detail-value">Dog Food</span>
+                        <span class="detail-dot">.</span>
+                        <span class="detail-label">Size:</span>
+                        <span class="detail-value">385gm</span>
+                      </p>
+                      <span class="card-price">140.000 VND</span>
+                    </div>
+                    <div class="card-action">
+                      <img class="card-icon" src="" alt="Gift" />
+                      <span class="card-dot">.</span>
+                      <span class="card-gift">Free Toy & Free Shaker</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="list-item col-3 col-md-6 col-sm-6">
+                  <a class="card" href="#">
+                    <div class="card-img">
+                      <img
+                        src="assets/images/product.png"
+                        alt="Reflex Plus Adult Cat Food Salmon"
+                      />
+                    </div>
+                    <div class="card-content">
+                      <h3 class="card-title">
+                        Reflex Plus Adult Cat Food Salmon
+                      </h3>
+                      <p class="card-detail detail">
+                        <span class="detail-label">Product:</span>
+                        <span class="detail-value">Dog Food</span>
+                        <span class="detail-dot">.</span>
+                        <span class="detail-label">Size:</span>
+                        <span class="detail-value">385gm</span>
+                      </p>
+                      <span class="card-price">140.000 VND</span>
+                    </div>
+                    <div class="card-action">
+                      <img class="card-icon" src="" alt="Gift" />
+                      <span class="card-dot">.</span>
+                      <span class="card-gift">Free Toy & Free Shaker</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="list-item col-3 col-md-6 col-sm-6">
+                  <a class="card" href="#">
+                    <div class="card-img">
+                      <img
+                        src="assets/images/product.png"
+                        alt="Reflex Plus Adult Cat Food Salmon"
+                      />
+                    </div>
+                    <div class="card-content">
+                      <h3 class="card-title">
+                        Reflex Plus Adult Cat Food Salmon
+                      </h3>
+                      <p class="card-detail detail">
+                        <span class="detail-label">Product:</span>
+                        <span class="detail-value">Dog Food</span>
+                        <span class="detail-dot">.</span>
+                        <span class="detail-label">Size:</span>
+                        <span class="detail-value">385gm</span>
+                      </p>
+                      <span class="card-price">140.000 VND</span>
+                    </div>
+                    <div class="card-action">
+                      <img class="card-icon" src="" alt="Gift" />
+                      <span class="card-dot">.</span>
+                      <span class="card-gift">Free Toy & Free Shaker</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="list-item col-3 col-md-6 col-sm-6">
+                  <a class="card" href="#">
+                    <div class="card-img">
+                      <img
+                        src="assets/images/product.png"
+                        alt="Reflex Plus Adult Cat Food Salmon"
+                      />
+                    </div>
+                    <div class="card-content">
+                      <h3 class="card-title">
+                        Reflex Plus Adult Cat Food Salmon
+                      </h3>
+                      <p class="card-detail detail">
+                        <span class="detail-label">Product:</span>
+                        <span class="detail-value">Dog Food</span>
+                        <span class="detail-dot">.</span>
+                        <span class="detail-label">Size:</span>
+                        <span class="detail-value">385gm</span>
+                      </p>
+                      <span class="card-price">140.000 VND</span>
+                    </div>
+                    <div class="card-action">
+                      <img class="card-icon" src="" alt="Gift" />
+                      <span class="card-dot">.</span>
+                      <span class="card-gift">Free Toy & Free Shaker</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="list-item col-3 col-md-6 col-sm-6">
+                  <a class="card" href="#">
+                    <div class="card-img">
+                      <img
+                        src="assets/images/product.png"
+                        alt="Reflex Plus Adult Cat Food Salmon"
+                      />
+                    </div>
+                    <div class="card-content">
+                      <h3 class="card-title">
+                        Reflex Plus Adult Cat Food Salmon
+                      </h3>
+                      <p class="card-detail detail">
+                        <span class="detail-label">Product:</span>
+                        <span class="detail-value">Dog Food</span>
+                        <span class="detail-dot">.</span>
+                        <span class="detail-label">Size:</span>
+                        <span class="detail-value">385gm</span>
+                      </p>
+                      <span class="card-price">140.000 VND</span>
+                    </div>
+                    <div class="card-action">
+                      <img class="card-icon" src="" alt="Gift" />
+                      <span class="card-dot">.</span>
+                      <span class="card-gift">Free Toy & Free Shaker</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="list-item col-3 col-md-6 col-sm-6">
+                  <a class="card" href="#">
+                    <div class="card-img">
+                      <img
+                        src="assets/images/product.png"
+                        alt="Reflex Plus Adult Cat Food Salmon"
+                      />
+                    </div>
+                    <div class="card-content">
+                      <h3 class="card-title">
+                        Reflex Plus Adult Cat Food Salmon
+                      </h3>
+                      <p class="card-detail detail">
+                        <span class="detail-label">Product:</span>
+                        <span class="detail-value">Dog Food</span>
+                        <span class="detail-dot">.</span>
+                        <span class="detail-label">Size:</span>
+                        <span class="detail-value">385gm</span>
+                      </p>
+                      <span class="card-price">140.000 VND</span>
+                    </div>
+                    <div class="card-action">
+                      <img class="card-icon" src="" alt="Gift" />
+                      <span class="card-dot">.</span>
+                      <span class="card-gift">Free Toy & Free Shaker</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="list-item col-3 col-md-6 col-sm-6">
+                  <a class="card" href="#">
+                    <div class="card-img">
+                      <img
+                        src="assets/images/product.png"
+                        alt="Reflex Plus Adult Cat Food Salmon"
+                      />
+                    </div>
+                    <div class="card-content">
+                      <h3 class="card-title">
+                        Reflex Plus Adult Cat Food Salmon
+                      </h3>
+                      <p class="card-detail detail">
+                        <span class="detail-label">Product:</span>
+                        <span class="detail-value">Dog Food</span>
+                        <span class="detail-dot">.</span>
+                        <span class="detail-label">Size:</span>
+                        <span class="detail-value">385gm</span>
+                      </p>
+                      <span class="card-price">140.000 VND</span>
+                    </div>
+                    <div class="card-action">
+                      <img class="card-icon" src="" alt="Gift" />
+                      <span class="card-dot">.</span>
+                      <span class="card-gift">Free Toy & Free Shaker</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="list-item col-3 col-md-6 col-sm-6">
+                  <a class="card" href="#">
+                    <div class="card-img">
+                      <img
+                        src="assets/images/product.png"
+                        alt="Reflex Plus Adult Cat Food Salmon"
+                      />
+                    </div>
+                    <div class="card-content">
+                      <h3 class="card-title">
+                        Reflex Plus Adult Cat Food Salmon
+                      </h3>
+                      <p class="card-detail detail">
+                        <span class="detail-label">Product:</span>
+                        <span class="detail-value">Dog Food</span>
+                        <span class="detail-dot">.</span>
+                        <span class="detail-label">Size:</span>
+                        <span class="detail-value">385gm</span>
+                      </p>
+                      <span class="card-price">140.000 VND</span>
+                    </div>
+                    <div class="card-action">
+                      <img class="card-icon" src="" alt="Gift" />
+                      <span class="card-dot">.</span>
+                      <span class="card-gift">Free Toy & Free Shaker</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
             </div>
-          </div>
-          <div class="section-body">
-            <ul class="list-products">
-              <li class="list-item">
-                <a class="card" href="#">
-                  <div class="card-img">
-                    <img
-                      src="assets/images/product.png"
-                      alt="Reflex Plus Adult Cat Food Salmon"
-                    />
-                  </div>
-                  <div class="card-content">
-                    <h3 class="card-title">
-                      Reflex Plus Adult Cat Food Salmon
-                    </h3>
-                    <p class="card-detail detail">
-                      <span class="detail-label">Product:</span>
-                      <span class="detail-value">Dog Food</span>
-                      <span class="detail-dot">.</span>
-                      <span class="detail-label">Size:</span>
-                      <span class="detail-value">385gm</span>
-                    </p>
-                    <span class="card-price">140.000 VND</span>
-                  </div>
-                  <div class="card-action">
-                    <img class="card-icon" src="" alt="Gift" />
-                    <span class="card-dot">.</span>
-                    <span class="card-gift">Free Toy & Free Shaker</span>
-                  </div>
-                </a>
-              </li>
-              <li class="list-item">
-                <a class="card" href="#">
-                  <div class="card-img">
-                    <img
-                      src="assets/images/product.png"
-                      alt="Reflex Plus Adult Cat Food Salmon"
-                    />
-                  </div>
-                  <div class="card-content">
-                    <h3 class="card-title">
-                      Reflex Plus Adult Cat Food Salmon
-                    </h3>
-                    <p class="card-detail detail">
-                      <span class="detail-label">Product:</span>
-                      <span class="detail-value">Dog Food</span>
-                      <span class="detail-dot">.</span>
-                      <span class="detail-label">Size:</span>
-                      <span class="detail-value">385gm</span>
-                    </p>
-                    <span class="card-price">140.000 VND</span>
-                  </div>
-                  <div class="card-action">
-                    <img class="card-icon" src="" alt="Gift" />
-                    <span class="card-dot">.</span>
-                    <span class="card-gift">Free Toy & Free Shaker</span>
-                  </div>
-                </a>
-              </li>
-              <li class="list-item">
-                <a class="card" href="#">
-                  <div class="card-img">
-                    <img
-                      src="assets/images/product.png"
-                      alt="Reflex Plus Adult Cat Food Salmon"
-                    />
-                  </div>
-                  <div class="card-content">
-                    <h3 class="card-title">
-                      Reflex Plus Adult Cat Food Salmon
-                    </h3>
-                    <p class="card-detail detail">
-                      <span class="detail-label">Product:</span>
-                      <span class="detail-value">Dog Food</span>
-                      <span class="detail-dot">.</span>
-                      <span class="detail-label">Size:</span>
-                      <span class="detail-value">385gm</span>
-                    </p>
-                    <span class="card-price">140.000 VND</span>
-                  </div>
-                  <div class="card-action">
-                    <img class="card-icon" src="" alt="Gift" />
-                    <span class="card-dot">.</span>
-                    <span class="card-gift">Free Toy & Free Shaker</span>
-                  </div>
-                </a>
-              </li>
-              <li class="list-item">
-                <a class="card" href="#">
-                  <div class="card-img">
-                    <img
-                      src="assets/images/product.png"
-                      alt="Reflex Plus Adult Cat Food Salmon"
-                    />
-                  </div>
-                  <div class="card-content">
-                    <h3 class="card-title">
-                      Reflex Plus Adult Cat Food Salmon
-                    </h3>
-                    <p class="card-detail detail">
-                      <span class="detail-label">Product:</span>
-                      <span class="detail-value">Dog Food</span>
-                      <span class="detail-dot">.</span>
-                      <span class="detail-label">Size:</span>
-                      <span class="detail-value">385gm</span>
-                    </p>
-                    <span class="card-price">140.000 VND</span>
-                  </div>
-                  <div class="card-action">
-                    <img class="card-icon" src="" alt="Gift" />
-                    <span class="card-dot">.</span>
-                    <span class="card-gift">Free Toy & Free Shaker</span>
-                  </div>
-                </a>
-              </li>
-              <li class="list-item">
-                <a class="card" href="#">
-                  <div class="card-img">
-                    <img
-                      src="assets/images/product.png"
-                      alt="Reflex Plus Adult Cat Food Salmon"
-                    />
-                  </div>
-                  <div class="card-content">
-                    <h3 class="card-title">
-                      Reflex Plus Adult Cat Food Salmon
-                    </h3>
-                    <p class="card-detail detail">
-                      <span class="detail-label">Product:</span>
-                      <span class="detail-value">Dog Food</span>
-                      <span class="detail-dot">.</span>
-                      <span class="detail-label">Size:</span>
-                      <span class="detail-value">385gm</span>
-                    </p>
-                    <span class="card-price">140.000 VND</span>
-                  </div>
-                  <div class="card-action">
-                    <img class="card-icon" src="" alt="Gift" />
-                    <span class="card-dot">.</span>
-                    <span class="card-gift">Free Toy & Free Shaker</span>
-                  </div>
-                </a>
-              </li>
-              <li class="list-item">
-                <a class="card" href="#">
-                  <div class="card-img">
-                    <img
-                      src="assets/images/product.png"
-                      alt="Reflex Plus Adult Cat Food Salmon"
-                    />
-                  </div>
-                  <div class="card-content">
-                    <h3 class="card-title">
-                      Reflex Plus Adult Cat Food Salmon
-                    </h3>
-                    <p class="card-detail detail">
-                      <span class="detail-label">Product:</span>
-                      <span class="detail-value">Dog Food</span>
-                      <span class="detail-dot">.</span>
-                      <span class="detail-label">Size:</span>
-                      <span class="detail-value">385gm</span>
-                    </p>
-                    <span class="card-price">140.000 VND</span>
-                  </div>
-                  <div class="card-action">
-                    <img class="card-icon" src="" alt="Gift" />
-                    <span class="card-dot">.</span>
-                    <span class="card-gift">Free Toy & Free Shaker</span>
-                  </div>
-                </a>
-              </li>
-              <li class="list-item">
-                <a class="card" href="#">
-                  <div class="card-img">
-                    <img
-                      src="assets/images/product.png"
-                      alt="Reflex Plus Adult Cat Food Salmon"
-                    />
-                  </div>
-                  <div class="card-content">
-                    <h3 class="card-title">
-                      Reflex Plus Adult Cat Food Salmon
-                    </h3>
-                    <p class="card-detail detail">
-                      <span class="detail-label">Product:</span>
-                      <span class="detail-value">Dog Food</span>
-                      <span class="detail-dot">.</span>
-                      <span class="detail-label">Size:</span>
-                      <span class="detail-value">385gm</span>
-                    </p>
-                    <span class="card-price">140.000 VND</span>
-                  </div>
-                  <div class="card-action">
-                    <img class="card-icon" src="" alt="Gift" />
-                    <span class="card-dot">.</span>
-                    <span class="card-gift">Free Toy & Free Shaker</span>
-                  </div>
-                </a>
-              </li>
-              <li class="list-item">
-                <a class="card" href="#">
-                  <div class="card-img">
-                    <img
-                      src="assets/images/product.png"
-                      alt="Reflex Plus Adult Cat Food Salmon"
-                    />
-                  </div>
-                  <div class="card-content">
-                    <h3 class="card-title">
-                      Reflex Plus Adult Cat Food Salmon
-                    </h3>
-                    <p class="card-detail detail">
-                      <span class="detail-label">Product:</span>
-                      <span class="detail-value">Dog Food</span>
-                      <span class="detail-dot">.</span>
-                      <span class="detail-label">Size:</span>
-                      <span class="detail-value">385gm</span>
-                    </p>
-                    <span class="card-price">140.000 VND</span>
-                  </div>
-                  <div class="card-action">
-                    <img class="card-icon" src="" alt="Gift" />
-                    <span class="card-dot">.</span>
-                    <span class="card-gift">Free Toy & Free Shaker</span>
-                  </div>
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
       </section>
       <section class="section section-sellers">
         <div class="container">
-          <div class="section-header">
-            <div class="section-text">
-              <h2 class="section-title">
-                Proud to be part of<span class="section-subtitle"
-                  >Pet sellers</span
-                >
-              </h2>
+          <div class="wrapper">
+            <div class="section-header">
+              <div class="section-text">
+                <h2 class="section-title">
+                  Proud to be part of<span class="section-subtitle"
+                    >Pet sellers</span
+                  >
+                </h2>
+              </div>
+              <div class="section-action">
+                <button class="btn btn-secondary">View all our sellers</button>
+              </div>
             </div>
-            <div class="section-action">
-              <button class="btn btn-secondary">View all our sellers</button>
+            <div class="section-body">
+              <ul class="list-products">
+                <li class="list-item">
+                  <img src="assets/images/sellers/sheba.png" alt="Sheba" />
+                </li>
+                <li class="list-item">
+                  <img src="assets/images/sellers/whiskas.png" alt="Whiskas" />
+                </li>
+                <li class="list-item">
+                  <img src="assets/images/sellers/bakers.png" alt="Bakers" />
+                </li>
+                <li class="list-item">
+                  <img src="assets/images/sellers/felix.png" alt="Felix" />
+                </li>
+                <li class="list-item">
+                  <img src="assets/images/sellers/goodboy.png" alt="Good Boy" />
+                </li>
+                <li class="list-item">
+                  <img
+                    src="assets/images/sellers/butchers.png"
+                    alt="Butcher's"
+                  />
+                </li>
+                <li class="list-item">
+                  <img
+                    src="assets/images/sellers/pedigree.png"
+                    alt="Pedigree"
+                  />
+                </li>
+              </ul>
             </div>
-          </div>
-          <div class="section-body">
-            <ul class="list-products">
-              <li class="list-item">
-                <img src="assets/images/sellers/sheba.png" alt="Sheba" />
-              </li>
-              <li class="list-item">
-                <img src="assets/images/sellers/whiskas.png" alt="Whiskas" />
-              </li>
-              <li class="list-item">
-                <img src="assets/images/sellers/bakers.png" alt="Bakers" />
-              </li>
-              <li class="list-item">
-                <img src="assets/images/sellers/felix.png" alt="Felix" />
-              </li>
-              <li class="list-item">
-                <img src="assets/images/sellers/goodboy.png" alt="Good Boy" />
-              </li>
-              <li class="list-item">
-                <img src="assets/images/sellers/butchers.png" alt="Butcher's" />
-              </li>
-              <li class="list-item">
-                <img src="assets/images/sellers/pedigree.png" alt="Pedigree" />
-              </li>
-            </ul>
           </div>
         </div>
       </section>
       <section class="section section-banner section-adoption">
         <div class="container">
-          <div class="section-content">
-            <div class="section-text">
-              <h2 class="section-title">
-                Adoption<img
-                  src="assets/images/adoption/fontisto_paw.png"
-                  alt="Fontisto Paw"
-                /><span class="section-subtitle"
-                  >We need help. so do they.</span
-                >
-              </h2>
-              <p class="section-desc">
-                Adopt a pet and give it a home, it will be love you back
-                unconditionally.
-              </p>
+          <div class="wrapper">
+            <div class="section-content">
+              <div class="section-text">
+                <h2 class="section-title">
+                  Adoption<img
+                    src="assets/images/adoption/fontisto_paw.png"
+                    alt="Fontisto Paw"
+                  /><span class="section-subtitle"
+                    >We need help. so do they.</span
+                  >
+                </h2>
+                <p class="section-desc">
+                  Adopt a pet and give it a home, it will be love you back
+                  unconditionally.
+                </p>
+              </div>
+              <div class="section-action">
+                <button class="btn btn-primary">Explore Now</button>
+                <button class="btn btn-secondary">View Intro</button>
+              </div>
             </div>
-            <div class="section-action">
-              <button class="btn btn-primary">Explore Now</button>
-              <button class="btn btn-secondary">View Intro</button>
+            <div class="section-image">
+              <img src="assets/images/adoption/adoption.png" alt="Adoption" />
             </div>
-          </div>
-          <div class="section-image">
-            <img src="assets/images/adoption/adoption.png" alt="Adoption" />
           </div>
         </div>
       </section>
       <section class="section section-products section-knowledge">
         <div class="container">
-          <div class="section-header">
-            <div class="section-text">
-              <p class="section-subtitle">You already know ?</p>
-              <h2 class="section-title">Useful pet knowledge</h2>
+          <div class="wrapper">
+            <div class="section-header">
+              <div class="section-text">
+                <p class="section-subtitle">You already know ?</p>
+                <h2 class="section-title">Useful pet knowledge</h2>
+              </div>
+              <div class="section-action">
+                <button class="btn btn-secondary"></button>
+              </div>
             </div>
-            <div class="section-action">
-              <button class="btn btn-secondary"></button>
+            <div class="section-body">
+              <ul class="list-products row">
+                <li class="list-item col-4 col-md-12 col-sm-12">
+                  <a class="card" href="#">
+                    <div class="card-img">
+                      <img
+                        src="assets/images/dogrun.png"
+                        alt="Identify Pomeranian"
+                      />
+                    </div>
+                    <div class="card-content">
+                      <div class="card-tag">
+                        <p>Pet knowledge</p>
+                      </div>
+                      <h3 class="card-title">
+                        What is a Pomeranian? How to Identify Pomeranian Dogs
+                      </h3>
+                      <p class="card-desc">
+                        The Pomeranian, also known as the Pomeranian (Pom dog),
+                        is always in the top of the cutest pets. Not only that,
+                        the small, lovely, smart, friendly, and skillful circus
+                        dog breed.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="list-item col-4 col-md-12 col-sm-12">
+                  <a class="card" href="#">
+                    <div class="card-img">
+                      <img
+                        src="assets/images/dogrun.png"
+                        alt="Identify Pomeranian"
+                      />
+                    </div>
+                    <div class="card-content">
+                      <div class="card-tag">
+                        <p>Pet knowledge</p>
+                      </div>
+                      <h3 class="card-title">
+                        What is a Pomeranian? How to Identify Pomeranian Dogs
+                      </h3>
+                      <p class="card-desc">
+                        The Pomeranian, also known as the Pomeranian (Pom dog),
+                        is always in the top of the cutest pets. Not only that,
+                        the small, lovely, smart, friendly, and skillful circus
+                        dog breed.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="list-item col-4 col-md-12 col-sm-12">
+                  <a class="card" href="#">
+                    <div class="card-img">
+                      <img
+                        src="assets/images/dogrun.png"
+                        alt="Identify Pomeranian"
+                      />
+                    </div>
+                    <div class="card-content">
+                      <div class="card-tag">
+                        <p>Pet knowledge</p>
+                      </div>
+                      <h3 class="card-title">
+                        What is a Pomeranian? How to Identify Pomeranian Dogs
+                      </h3>
+                      <p class="card-desc">
+                        The Pomeranian, also known as the Pomeranian (Pom dog),
+                        is always in the top of the cutest pets. Not only that,
+                        the small, lovely, smart, friendly, and skillful circus
+                        dog breed.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
             </div>
-          </div>
-          <div class="section-body">
-            <ul class="list-products">
-              <li class="list-item">
-                <a class="card" href="#">
-                  <div class="card-img">
-                    <img src="assets/images/dogrun.png" alt="Identify Pomeranian" />
-                  </div>
-                  <div class="card-content">
-                    <div class="card-tag">
-                      <p>Pet knowledge</p>
-                    </div>
-                    <h3 class="card-title">
-                      What is a Pomeranian? How to Identify Pomeranian Dogs
-                    </h3>
-                    <p class="card-desc">
-                      The Pomeranian, also known as the Pomeranian (Pom dog), is
-                      always in the top of the cutest pets. Not only that, the
-                      small, lovely, smart, friendly, and skillful circus dog
-                      breed.
-                    </p>
-                  </div>
-                </a>
-              </li>
-              <li class="list-item">
-                <a class="card" href="#">
-                  <div class="card-img">
-                    <img src="assets/images/dogrun.png" alt="Identify Pomeranian" />
-                  </div>
-                  <div class="card-content">
-                    <div class="card-tag">
-                      <p>Pet knowledge</p>
-                    </div>
-                    <h3 class="card-title">
-                      What is a Pomeranian? How to Identify Pomeranian Dogs
-                    </h3>
-                    <p class="card-desc">
-                      The Pomeranian, also known as the Pomeranian (Pom dog), is
-                      always in the top of the cutest pets. Not only that, the
-                      small, lovely, smart, friendly, and skillful circus dog
-                      breed.
-                    </p>
-                  </div>
-                </a>
-              </li>
-              <li class="list-item">
-                <a class="card" href="#">
-                  <div class="card-img">
-                    <img src="assets/images/dogrun.png" alt="Identify Pomeranian" />
-                  </div>
-                  <div class="card-content">
-                    <div class="card-tag">
-                      <p>Pet knowledge</p>
-                    </div>
-                    <h3 class="card-title">
-                      What is a Pomeranian? How to Identify Pomeranian Dogs
-                    </h3>
-                    <p class="card-desc">
-                      The Pomeranian, also known as the Pomeranian (Pom dog), is
-                      always in the top of the cutest pets. Not only that, the
-                      small, lovely, smart, friendly, and skillful circus dog
-                      breed.
-                    </p>
-                  </div>
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer-register">
-          <div class="register-title">
-            <p>Register now so you don't miss our programs</p>
+        <div class="wrapper">
+          <div class="footer-register">
+            <div class="register-title">
+              <p>Register now so you don't miss our programs</p>
+            </div>
+            <form class="register-form">
+              <input placeholder="Enter your email" type="email" />
+              <button class="btn btn-primary btn-border">Subcribe Now</button>
+            </form>
           </div>
-          <form class="register-form">
-            <input placeholder="Enter your email" type="email" />
-            <button class="btn btn-primary btn-border">Subcribe Now</button>
-          </form>
-        </div>
-        <div class="footer-link">
-          <nav class="footer-nav">
-            <ul class="list-nav">
-              <li class="list-item">
-                <a class="item-link" href="#">Category</a>
-              </li>
-              <li class="list-item"><a class="item-link" href="#">About</a></li>
-              <li class="list-item">
-                <a class="item-link" href="#">Contacts</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="footer-social">
-            <ul class="list-social">
-              <li class="list-item">
-                <a class="item-link" href="#">
-                  <img
-                    class="item-img"
-                    src="assets/images/footer/facebook.png"
-                    alt="Facebook"
-                  />
-                </a>
-              </li>
-              <li class="list-item">
-                <a class="item-link" href="#">
-                  <img
-                    class="item-img"
-                    src="assets/images/footer/twitter.png"
-                    alt="Twitter"
-                  />
-                </a>
-              </li>
-              <li class="list-item">
-                <a class="item-link" href="#">
-                  <img
-                    class="item-img"
-                    src="assets/images/footer/instagram.png"
-                    alt="Instagram"
-                  />
-                </a>
-              </li>
-              <li class="list-item">
-                <a class="item-link" href="#">
-                  <img
-                    class="item-img"
-                    src="assets/images/footer/youtube.png"
-                    alt="Youtube"
-                  />
-                </a>
-              </li>
-            </ul>
+          <div class="footer-link">
+            <nav class="footer-nav">
+              <ul class="list-nav">
+                <li class="list-item">
+                  <a class="item-link" href="#">Category</a>
+                </li>
+                <li class="list-item">
+                  <a class="item-link" href="#">About</a>
+                </li>
+                <li class="list-item">
+                  <a class="item-link" href="#">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="footer-social">
+              <ul class="list-social">
+                <li class="list-item">
+                  <a class="item-link" href="#">
+                    <img
+                      class="item-img"
+                      src="assets/images/footer/facebook.png"
+                      alt="Facebook"
+                    />
+                  </a>
+                </li>
+                <li class="list-item">
+                  <a class="item-link" href="#">
+                    <img
+                      class="item-img"
+                      src="assets/images/footer/twitter.png"
+                      alt="Twitter"
+                    />
+                  </a>
+                </li>
+                <li class="list-item">
+                  <a class="item-link" href="#">
+                    <img
+                      class="item-img"
+                      src="assets/images/footer/instagram.png"
+                      alt="Instagram"
+                    />
+                  </a>
+                </li>
+                <li class="list-item">
+                  <a class="item-link" href="#">
+                    <img
+                      class="item-img"
+                      src="assets/images/footer/youtube.png"
+                      alt="Youtube"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="footer-info">
-          <div class="footer-copyright">
-            <p>© 2022 Monito. All rights reserved.</p>
-          </div>
-          <div class="footer-logo">
-            <h2 class="logo">
-              <img class="logo-img" src="assets/images/logo.png" />
-            </h2>
-          </div>
-          <div class="footer-legal">
-            <ul class="list-legal">
-              <li class="list-item">
-                <a class="item-link" href="#">Terms of Service</a>
-              </li>
-              <li class="list-item">
-                <a class="item-link" href="#">Privacy Policy</a>
-              </li>
-            </ul>
+          <div class="footer-info">
+            <div class="footer-copyright">
+              <p>© 2022 Monito. All rights reserved.</p>
+            </div>
+            <div class="footer-logo">
+              <h2 class="logo">
+                <img class="logo-img" src="assets/images/logo.png" />
+              </h2>
+            </div>
+            <div class="footer-legal">
+              <ul class="list-legal">
+                <li class="list-item">
+                  <a class="item-link" href="#">Terms of Service</a>
+                </li>
+                <li class="list-item">
+                  <a class="item-link" href="#">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
