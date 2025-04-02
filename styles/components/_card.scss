@@ -1,0 +1,71 @@
+@use "../abstracts/" as *;
+
+.card {
+  &-image {
+    img {
+      border-radius: 10px;
+    }
+  }
+  &-content {
+    @include flex($direction: column);
+    padding: 8px 8px 0 8px;
+  }
+  &-title {
+    font-weight: 700;
+    color: $light-black-color;
+    line-height: 24px;
+    font-size: $size-medium;
+  }
+  &-detail {
+    color: $grey-a-color;
+    line-height: 12px;
+    padding: 4px 0;
+    font-size: $size-tiny;
+  }
+  &-price {
+    font-weight: 700;
+    color: $light-black-color;
+    line-height: 14px;
+    font-size: $size-small;
+  }
+  &-action {
+    @include flex($align: center);
+    padding: 8px 8px 20px 8px;
+    border-radius: 8px;
+    background-color: $light-orange-color;
+    padding: 8px 46px 6px 10px;
+  }
+  &-dot {
+    padding: 0 10px;
+  }
+  &-gift {
+    font-size: $size-small;
+    line-height: 20px;
+    font-weight: 700;
+    color: $secondary-color;
+  }
+  &-desc {
+    color: $dark-grey-color;
+    font-weight: 400;
+    font-size: $size-small;
+    line-height: 20px;
+  }
+  &-tag {
+    background-color: $light-blue-color;
+    border-radius: 28px;
+    font-size: $size-xs;
+    line-height: 16px;
+    color: $white-color;
+    font-weight: 700;
+    padding: 2px 10px;
+    max-width: 89px;
+    width: 100%;
+  }
+}
+
+.detail {
+  &-value {
+    font-weight: 700;
+    padding-left: 6px;
+  }
+}

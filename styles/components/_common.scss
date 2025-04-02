@@ -1,0 +1,44 @@
+@use "../abstracts/" as *;
+
+.container {
+  max-width: 1212px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.section-banner .section-action {
+  @include flex($direction: row, $gap: 20px);
+}
+
+.section {
+  &-body {
+    padding-top: 28px;
+  }
+
+  &-header {
+    @include flex($direction: row, $justify: space-between, $align: center);
+    padding-top: 60px;
+  }
+
+  &-text {
+    h2 {
+      font-size: $size-large;
+      font-weight: 700;
+      color: $secondary-color;
+      line-height: 36px;
+    }
+
+    p {
+      font-size: $size-medium;
+      color: $black-color;
+      font-weight: 500;
+      line-height: 24px;
+    }
+  }
+  &-action {
+    font-size: $size-small;
+    font-weight: 500;
+    line-height: 20px;
+  }
+}

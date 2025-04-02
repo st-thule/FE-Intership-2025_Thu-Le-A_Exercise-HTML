@@ -1,0 +1,22 @@
+@use "../abstracts/" as *;
+
+.btn {
+  border-radius: 57px;
+  font-weight: 500;   
+  &-secondary {
+    @include flex($direction: row, $align: center, $justify: space-between);
+    border: 2px solid $primary-color;
+    padding: 12px 28px;
+    color: $primary-color;
+    font-size: $size-small;
+
+    img {
+      padding-left: 8px;
+    }
+  }
+  &-primary {
+    background-color: $primary-color;
+    color: $white-color;
+    padding: 14px 35px;
+  }
+}
