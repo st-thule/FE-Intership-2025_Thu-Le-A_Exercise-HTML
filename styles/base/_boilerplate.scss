@@ -1,18 +1,15 @@
-@use "../abstracts/" as *;
+html {
+  box-sizing: border-box;
+}
 
-//Font Family
-$primary-font: 'SVN-Gilroy', sans-serif;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
-// Colors
-$primary-color: #002A48;
-$secondary-color: #003459;
-$background-color: #FCEED5;
-$description-color: #242B33;
-$white: #ffffff;
-$card-primary-color: #00171F;
-$grey-color: #667479;
-$black-color: #000000;
-$tag-color: #00A7E7;
-
-
-// Breakpoints
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "SVN-Gilroy", sans-serif;
+}
