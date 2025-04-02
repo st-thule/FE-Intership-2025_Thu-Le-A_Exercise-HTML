@@ -2,21 +2,21 @@
 
 .btn {
   border-radius: 57px;
+  font-weight: 500;   
   &-secondary {
     @include flex($direction: row, $align: center, $justify: space-between);
-    border: 2px solid $secondary-color;
+    border: 2px solid $primary-color;
     padding: 12px 28px;
-    color: $secondary-color;
-    font-weight: 500;
+    color: $primary-color;
     font-size: 14px;
 
     img {
-      padding-left: 21px;
+      padding-left: 8px;
     }
   }
   &-primary {
-    background-color: $secondary-color;
-    color: $white;
+    background-color: $primary-color;
+    color: $white-color;
     padding: 14px 35px;
   }
 }

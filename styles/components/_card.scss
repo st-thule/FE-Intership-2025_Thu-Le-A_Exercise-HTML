@@ -1,7 +1,6 @@
 @use "../abstracts/" as *;
 
 .card {
-  max-width: 280px;
   &-image {
     img {
       border-radius: 10px;
@@ -9,24 +8,23 @@
   }
   &-content {
     @include flex($direction: column);
-    max-width: 264px;
-    padding: 8px 8px 20px 8px;
+    padding: 8px 8px 0 8px;
   }
   &-title {
     font-weight: 700;
-    color: $card-primary-color;
+    color: $light-black-color;
     line-height: 24px;
     font-size: 16px;
   }
   &-detail {
-    color: $grey-color;
+    color: $grey-a-color;
     line-height: 12px;
     padding: 4px 0;
     font-size: 12px;
   }
   &-price {
     font-weight: 700;
-    color: $card-primary-color;
+    color: $light-black-color;
     line-height: 14px;
     font-size: 14px;
   }
@@ -34,7 +32,7 @@
     @include flex($align: center);
     padding: 8px 8px 20px 8px;
     border-radius: 8px;
-    background-color: $background-color;
+    background-color: $light-orange-color;
     padding: 8px 46px 6px 10px;
   }
   &-dot {
@@ -44,20 +42,20 @@
     font-size: 14px;
     line-height: 20px;
     font-weight: 700;
-    color: $primary-color;
+    color: $secondary-color;
   }
   &-desc {
-    color: $description-color;
+    color: $dark-grey-color;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
   }
   &-tag {
-    background-color: $tag-color;
+    background-color: $light-blue-color;
     border-radius: 28px;
     font-size: 10px;
     line-height: 16px;
-    color: $white;
+    color: $white-color;
     font-weight: 700;
     padding: 2px 10px;
     max-width: 89px;

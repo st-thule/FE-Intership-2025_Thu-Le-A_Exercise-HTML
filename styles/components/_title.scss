@@ -1,0 +1,16 @@
+@use "../abstracts/" as *;
+
+h1 {
+  color: $secondary-color;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 68px;
+  span {
+    font-family: 46px;
+    line-height: 60px;
+  }
+}
+
+h2 {
+  color: $primary-color;
+}

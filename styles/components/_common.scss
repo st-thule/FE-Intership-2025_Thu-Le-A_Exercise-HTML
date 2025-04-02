@@ -10,11 +10,6 @@
 .section-banner .section-action {
   @include flex($direction: row, $gap: 20px);
 }
-.section-banner {
-  img {
-    // width: 100%;
-  }
-}
 
 .section {
   &-body {
