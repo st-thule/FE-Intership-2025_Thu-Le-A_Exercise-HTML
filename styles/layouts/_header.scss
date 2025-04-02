@@ -3,6 +3,8 @@
 .header {
   background-color: transparent;
   padding: 30px 0;
+  position: fixed;
+  width: 100%;
   .container {
     @include flex($direction: row, $justify: space-between, $align: center);
   }
@@ -37,13 +39,13 @@
 }
 
 .utitlity-currency {
-    @include flex($align: center);
+  @include flex($align: center);
 }
 .currency {
-    &-flag {
-        padding-right: 6px;
-    }
-    &-text {
-        padding-right: 4px;
-    }
+  &-flag {
+    padding-right: 6px;
+  }
+  &-text {
+    padding-right: 4px;
+  }
 }

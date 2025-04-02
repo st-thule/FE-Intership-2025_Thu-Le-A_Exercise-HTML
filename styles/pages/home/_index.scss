@@ -2,7 +2,7 @@
 
 .section-sellers .list {
   &-sellers {
-    @include flex($justify: space-between, $gap: 20px);
+    @include flex($justify: space-between, $gap: none);
   }
   &-item {
     box-shadow: none;
@@ -21,4 +21,23 @@
       padding: 10px 0 6px 0;
     }
   }
+}
+
+.section-hero .section-image {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  background-color: $background-color;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.section-hero {
+  position: relative;
+  height: 100vh;
+  z-index: -1;
+
 }
