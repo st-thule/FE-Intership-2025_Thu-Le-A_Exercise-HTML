@@ -1,7 +1,6 @@
 @use "../abstracts/" as *;
 
 .card {
-  max-width: 280px;
   &-image {
     img {
       border-radius: 10px;
@@ -9,7 +8,6 @@
   }
   &-content {
     @include flex($direction: column);
-    max-width: 264px;
     padding: 8px 8px 20px 8px;
   }
   &-title {

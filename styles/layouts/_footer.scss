@@ -81,7 +81,7 @@
   }
 }
 
-.list {
+.footer .list {
   &-nav {
     @include flex($gap: 60px);
     color: $card-primary-color;
