@@ -2,13 +2,14 @@
 
 .btn {
   border-radius: 57px;
+  border: 1.5px solid $primary-color;
   font-weight: $font-medium;
+  font-size: $size-medium;
+  cursor: pointer;
   &-secondary {
     @include flex($direction: row, $align: center, $justify: space-between);
-    border: 2px solid $primary-color;
     padding: 12px 28px;
     color: $primary-color;
-    font-weight: $font-medium;
     font-size: $size-small;
     line-height: 24px;
     img {
@@ -19,7 +20,7 @@
     background-color: $primary-color;
     color: $white-color;
     padding: 14px 35px;
-    font-size: $size-medium;
+    
     line-height: 24px;
   }
   &-border {
@@ -27,8 +28,8 @@
   }
 
   &-bold {
-      @extend .btn; 
-      font-weight: $font-bold;
-      padding: 12px 28px 10px; 
+    @extend .btn;
+    font-weight: $font-bold;
+    padding: 12px 28px 10px;
   }
 }
