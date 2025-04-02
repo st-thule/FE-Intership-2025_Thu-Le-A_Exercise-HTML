@@ -23,21 +23,21 @@
 
   &-text {
     h2 {
-      font-size: 24px;
+      font-size: $size-large;
       font-weight: 700;
       color: $secondary-color;
       line-height: 36px;
     }
 
     p {
-      font-size: 16px;
+      font-size: $size-medium;
       color: $black-color;
       font-weight: 500;
       line-height: 24px;
     }
   }
   &-action {
-    font-size: 14px;
+    font-size: $size-small;
     font-weight: 500;
     line-height: 20px;
   }

@@ -14,19 +14,19 @@
     font-weight: 700;
     color: $light-black-color;
     line-height: 24px;
-    font-size: 16px;
+    font-size: $size-medium;
   }
   &-detail {
     color: $grey-a-color;
     line-height: 12px;
     padding: 4px 0;
-    font-size: 12px;
+    font-size: $size-tiny;
   }
   &-price {
     font-weight: 700;
     color: $light-black-color;
     line-height: 14px;
-    font-size: 14px;
+    font-size: $size-small;
   }
   &-action {
     @include flex($align: center);
@@ -39,7 +39,7 @@
     padding: 0 10px;
   }
   &-gift {
-    font-size: 14px;
+    font-size: $size-small;
     line-height: 20px;
     font-weight: 700;
     color: $secondary-color;
@@ -47,13 +47,13 @@
   &-desc {
     color: $dark-grey-color;
     font-weight: 400;
-    font-size: 14px;
+    font-size: $size-small;
     line-height: 20px;
   }
   &-tag {
     background-color: $light-blue-color;
     border-radius: 28px;
-    font-size: 10px;
+    font-size: $size-xs;
     line-height: 16px;
     color: $white-color;
     font-weight: 700;
