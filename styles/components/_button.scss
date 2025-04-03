@@ -11,14 +11,21 @@
   &-secondary {
     @include flex($direction: row, $align: center, $justify: space-between);
     color: $primary-color;
-    font-size: $size-small;
     img {
       padding-left: 20px;
+    }
+    &:hover {
+      background-color: $primary-color;
+      color: $white-color;
     }
   }
   &-primary {
     background-color: $primary-color;
     color: $white-color;
+    &:hover {
+      background-color: $white-color;
+      color: $primary-color;
+    }
   }
   &-border {
     border-radius: 8px;
@@ -36,5 +43,8 @@
     @extend .btn;
     font-weight: $font-bold;
     padding: 12px 28px 10px;
+  }
+  &-font-14 {
+    font-size: $size-small;
   }
 }
