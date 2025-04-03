@@ -10,15 +10,15 @@
 
 // Row, Col
 $columns: 12;
-$grid-gutter: 20px;
+$gap: 20px;
 
 .row {
-  @include flex($wrap: wrap, $gap: $grid-gutter);
+  @include flex($wrap: wrap, $gap: $gap);
 }
 
 @for $i from 1 through $columns {
   .col-#{$i} {
-    width: calc((100% - (12 / $i - 1) * $grid-gutter) / (12 / $i));
+    width: calc((100% - (12 / $i - 1) * $gap) / (12 / $i));
   }
 }
 
@@ -26,14 +26,14 @@ $grid-gutter: 20px;
 @media screen and (min-width: 576px) {
   @for $i from 1 through $columns {
     .col-sm-#{$i} {
-      width: calc((100% - (12 / $i - 1) * $grid-gutter) / (12 / $i));    }
+      width: calc((100% - (12 / $i - 1) * $gap) / (12 / $i));    }
   }
 }
 
 @media screen and (min-width: 768px) {
   @for $i from 1 through $columns {
     .col-md-#{$i} {
-      width: calc((100% - (12 / $i - 1) * $grid-gutter) / (12 / $i));
+      width: calc((100% - (12 / $i - 1) * $gap) / (12 / $i));
     }
   }
 }
