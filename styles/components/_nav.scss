@@ -1,1 +1,29 @@
+@use "../base/" as *;
 
+nav {
+  .list {
+    &-menu {
+      @include flex($direction: row, $align: center);
+      gap: 48px;
+    }
+    &-item {
+      font-size: $size-medium;
+      line-height: 24px;
+      font-weight: $font-bold;
+      a {
+        color: $primary-color;
+      }
+    }
+    &-xl {
+      gap: 60px;
+    }
+    &-black {
+      a {
+        color: $light-black-color;
+      }
+    }
+    &-thin {
+      font-weight: $font-medium;
+    }
+  }
+}
