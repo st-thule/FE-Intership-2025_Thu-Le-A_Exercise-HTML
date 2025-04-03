@@ -1,0 +1,51 @@
+@use "../base/" as *;
+
+.header {
+  background-color: transparent;
+  padding: 30px 0;
+  position: fixed;
+  width: 100%;
+  .wrapper {
+    @include flex($direction: row, $justify: space-between, $align: center);
+  }
+  &-navigation {
+    @include flex($direction: row, $justify: space-between, $align: center);
+  }
+  &-utility {
+    @include flex($direction: row, $align: center, $gap: 14px);
+  }
+}
+.nav {
+  padding-left: 48px;
+}
+
+.header .list {
+  &-nav {
+    @include flex($gap: 48px);
+  }
+}
+
+.form {
+  &-search {
+    @include flex($direction: row, $align: center);
+    padding: 12px 78px 12px 12px;
+    border-radius: 46px;
+    input {
+      padding-left: 12px;
+      border: none;
+      background-color: transparent;
+    }
+  }
+}
+
+.utitlity-currency {
+  @include flex($align: center);
+}
+.currency {
+  &-flag {
+    padding-right: 6px;
+  }
+  &-text {
+    padding-right: 4px;
+  }
+}
