@@ -2,9 +2,12 @@
 
 .card {
   padding: 8px 8px 20px 8px;
+  display: block;
   &-image {
     img {
-      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
   &-content {
@@ -28,6 +31,7 @@
     color: $primary-color;
     line-height: $size-small;
     font-size: 14px;
+    padding-bottom: 10px;
   }
   &-action {
     @include flex($align: center);
@@ -66,7 +70,7 @@
 
 .detail {
   &-value {
-    font-weight:$font-bold;
+    font-weight: $font-bold;
     padding-left: 6px;
   }
 }
