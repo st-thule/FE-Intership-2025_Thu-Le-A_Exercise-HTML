@@ -5,3 +5,12 @@
   @include flex($direction: column);
 }
 
+.section {
+  position: relative;
+  &-products {
+    padding: 60px 0;
+  }
+  &-banner {
+    position: relative;
+  }
+}
