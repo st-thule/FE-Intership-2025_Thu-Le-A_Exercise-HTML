@@ -16,21 +16,22 @@
   }
   &-title {
     font-weight: $font-bold;
-    color: $primary-color;
+    color: $light-black-color;
     line-height: 24px;
     font-size: $size-medium;
   }
   &-detail {
+    @include flex();
     color: $grey-a-color;
     line-height: 12px;
     padding: 4px 0;
     font-size: $size-tiny;
   }
   &-price {
-    font-weight: 700;
-    color: $primary-color;
-    line-height: $size-small;
-    font-size: 14px;
+    font-weight: $font-bold;
+    color: $light-black-color;
+    line-height: 14px;
+    font-size: $size-small;
     padding-bottom: 10px;
   }
   &-action {
@@ -39,9 +40,6 @@
     border-radius: 8px;
     background-color: $light-orange-color;
     padding: 8px 46px 6px 10px;
-  }
-  &-dot {
-    padding: 0 10px;
   }
   &-gift {
     font-size: $size-small;
@@ -66,11 +64,17 @@
     max-width: 89px;
     width: 100%;
   }
+  &-dot {
+    padding: 0 4px;
+  }
 }
 
 .detail {
   &-value {
     font-weight: $font-bold;
     padding-left: 6px;
+  }
+  &-dot {
+    padding: 0 4px;
   }
 }
