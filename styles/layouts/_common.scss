@@ -4,10 +4,3 @@
 .wrapper {
   @include flex($direction: column);
 }
-
-//section
-.section {
-  &-action {
-    @include flex();
-  }
-}

@@ -1,15 +1,16 @@
 @use "../base/" as *;
 
 .btn {
-  padding: 14px 28px;
+  padding: 14px 24px;
   border-radius: 57px;
   border: 1.5px solid $primary-color;
   font-weight: $font-medium;
   font-size: $size-medium;
   line-height: 24px;
   cursor: pointer;
+  @include flex($direction: row, $align: center, $gap: 8px);
+  width: fit-content;
   &-secondary {
-    @include flex($direction: row, $align: center, $justify: space-between);
     color: $primary-color;
     img {
       padding-left: 20px;
@@ -40,11 +41,9 @@
     padding: 12px 28px;
   }
   &-bold {
-    @extend .btn;
     font-weight: $font-bold;
-    padding: 12px 28px 10px;
   }
-  &-font-14 {
+  &-font-small {
     font-size: $size-small;
   }
 }
