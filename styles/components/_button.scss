@@ -8,7 +8,7 @@
   font-size: $size-medium;
   line-height: 24px;
   cursor: pointer;
-  @include flex($direction: row, $align: center, $gap: 8px);
+  @include flex($direction: row, $align: center);
   width: fit-content;
   &-secondary {
     color: $primary-color;
