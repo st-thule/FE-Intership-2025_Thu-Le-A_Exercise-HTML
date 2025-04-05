@@ -1,13 +1,21 @@
 @use "../../base/" as *;
 
 .section {
- 
+  padding-top: 60px;
+  @media screen and (max-width: $md) {
+    padding-top: 30px;
+  }
   &-header {
     @include flex($direction: row, $justify: space-between, $align: center);
-    padding-top: 60px;
+    padding-bottom: 28px;
+    @media screen and (max-width: $md) {
+      padding-bottom: 20px;
+    }
   }
   &-body {
-    padding-top: 28px;
+    @media screen and (max-width: $md) {
+      padding-bottom: 16px;
+    }
   }
   &-text {
     h2 {
@@ -15,12 +23,40 @@
       font-weight: $font-bold;
       line-height: 36px;
       color: $primary-color;
+      @media screen and (max-width: $sm) {
+        font-size: $size-regular;
+        line-height: 32px;
+      }
     }
     p {
       font-size: $size-medium;
       font-weight: $font-medium;
       line-height: 24px;
       color: $black-color;
+      @media screen and (max-width: $sm) {
+        font-size: $size-small;
+        line-height: 20px;
+      }
+    }
+  }
+  &-action {
+    @media screen and (max-width: $md) {
+      display: none;
+    }
+  }
+
+  &-footer {
+    display: none;
+    @media screen and (max-width: $md) {
+      display: block;
+      width: 100%;
+      .btn-flex {
+        width: auto;
+        text-align: center;
+        justify-content: center;
+        font-size: $size-medium;
+        line-height: 24px;
+      }
     }
   }
 }
