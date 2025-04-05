@@ -1,14 +1,13 @@
-
 // Colors
 $primary-color: #003459;
 $secondary-color: #002A48;
 $light-orange-color: #FCEED5;
 $dark-grey-color: #242B33;
-$white-color: #ffffff;
+$white-color: #FDFDFD;
 $light-black-color: #00171F;
 $grey-a-color: #667479;
 $black-color: #000000;
-$light-blue-color: #00A7E7;
+$light-blue-color: #00a7e7;
 
 //font size
 $size-xs: 10px;
@@ -34,5 +33,12 @@ $spacing-2xl: 40px;
 $font-normal: 400;
 $font-medium: 500;
 $font-bold: 700;
-$font-extrabold: 800
+$font-extrabold: 800;
 // Breakpoints
+$sm: 576px;
+$md: 768px;
+$lg: 1280px;
+
+// Row, col
+$columns: 12;
+$gap: 20px;
