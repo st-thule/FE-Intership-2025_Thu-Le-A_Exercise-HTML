@@ -9,6 +9,7 @@
   &-img {
     margin-bottom: 8px;
     img {
+      display: block;
       width: 100%;
       object-fit: cover;
       aspect-ratio: 1;
@@ -29,14 +30,14 @@
   &-detail {
     @include flex();
     color: $grey-a-color;
-    line-height: 12px;
+    line-height: 18px;
     font-size: $size-tiny;
     margin-bottom: 4px;
   }
   &-price {
     font-weight: $font-bold;
     color: $light-black-color;
-    line-height: 14px;
+    line-height: 20px;
     font-size: $size-small;
   }
   &-action {
