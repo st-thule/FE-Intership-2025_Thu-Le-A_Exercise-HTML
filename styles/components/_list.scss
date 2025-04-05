@@ -6,5 +6,8 @@
   }
   &-xl {
     gap: 60px;
+    @media screen and (max-width: $sm) {
+      gap: 40px;
+    }
   }
 }
