@@ -1,20 +1,24 @@
-@use "../../base/" as *;
+@use "../base/" as *;
 
 .section {
-  padding-top: 60px;
-  @media screen and (max-width: $md) {
-    padding-top: 30px;
+  &-products {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (max-width: $md) {
+      padding-top: 30px;
+      padding-bottom: 40px;
+    }
   }
   &-header {
     @include flex($direction: row, $justify: space-between, $align: center);
-    padding-bottom: 28px;
+    margin-bottom: 28px;
     @media screen and (max-width: $md) {
-      padding-bottom: 20px;
+      margin-bottom: 20px;
     }
   }
   &-body {
     @media screen and (max-width: $md) {
-      padding-bottom: 16px;
+      margin-bottom: 16px;
     }
   }
   &-text {
@@ -39,24 +43,15 @@
       }
     }
   }
-  &-action {
-    @media screen and (max-width: $md) {
-      display: none;
-    }
-  }
 
   &-footer {
-    display: none;
-    @media screen and (max-width: $md) {
-      display: block;
-      width: 100%;
-      .btn-flex {
-        width: auto;
-        text-align: center;
-        justify-content: center;
-        font-size: $size-medium;
-        line-height: 24px;
-      }
+    width: 100%;
+    .btn-flex {
+      width: auto;
+      text-align: center;
+      justify-content: center;
+      font-size: $size-medium;
+      line-height: 24px;
     }
   }
 }
