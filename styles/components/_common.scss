@@ -1,0 +1,15 @@
+@use "../base/" as *;
+
+.pc-only {
+    display: block;
+    @media screen and (max-width: $md) {
+        display: none;
+    }
+}
+
+.sp-only {
+    display: none;
+    @media screen and (max-width: $lg) {
+        display: block;;
+    }
+}
