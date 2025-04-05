@@ -1,0 +1,10 @@
+@use "../base/" as *;
+.list {
+  &-menu {
+    @include flex($direction: row, $align: center);
+    gap: 48px;
+  }
+  &-xl {
+    gap: 60px;
+  }
+}
