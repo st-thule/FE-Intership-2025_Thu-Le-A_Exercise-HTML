@@ -17,13 +17,5 @@ nav {
     &-xl {
       gap: 60px;
     }
-    &-black {
-      a {
-        color: $light-black-color;
-      }
-    }
-    &-thin {
-      font-weight: $font-medium;
-    }
   }
 }
